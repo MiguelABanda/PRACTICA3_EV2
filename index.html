@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Países</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Buscador de Países (Idioma Español)</h1>
+        <form id="buscar">
+            <label for="paisNombre">Introduce el nombre común del país (ej: Argentina):</label>
+            <input type="text" id="paisNombre" required>
+            <button type="submit">Buscar</button>
+        </form>
+
+        <div id="cartaPais" class="hidden">
+            <img id="banderaPais" src="" alt="Bandera del país">
+            <h2 id="nombreOficialPais"></h2>
+            <div id="infoPais">
+                <p><strong>Capital:</strong> <span id="capitalPais"></span></p>
+                <p><strong>Población:</strong> <span id="poblacionPais"></span></p>
+                <p><strong>Región:</strong> <span id="regionPais"></span></p>
+                <p><strong>Moneda Principal:</strong> <span id="monedaPais"></span></p>
+            </div>
+        </div>
+        
+        <p id="error" class="hidden"></p>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
