@@ -1,0 +1,85 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+h1 {
+    color: #ffe81f; /* Amarillo Star Wars */
+}
+
+form {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #2e2e2e;
+    color: #e0e0e0;
+    width: 80%;
+}
+
+button {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffe81f;
+    color: #121212;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+button:hover {
+    background-color: #f0db1e;
+}
+
+#cartaPais {
+    border-top: 2px solid #ffe81f;
+    padding-top: 1rem;
+}
+
+#cartaPais img {
+    max-width: 200px;
+    border-radius: 5px; 
+    border: 3px solid #ffe81f;
+    background-color: #333;
+}
+
+#infoPais p {
+    background-color: #2e2e2e;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+#error-message {
+    color: #ff4d4d; /* Rojo para errores */
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
